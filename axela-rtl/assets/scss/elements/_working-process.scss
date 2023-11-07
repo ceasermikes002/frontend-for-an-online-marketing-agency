@@ -1,0 +1,72 @@
+
+// working process style hear
+
+.single-working-process-one{
+    background-image: url(../images/working-process/01.png);
+    height: 304px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &:hover{
+        .inner{
+            img{
+                &.logo{
+                    transform: translateY(-10px) scale(1.02);
+                }
+            }
+        }
+    }
+    &::after{ 
+        position: absolute;
+        content: "";
+        left: 50%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        width: 100%;
+        background: #00000030;
+        filter: blur(70px);
+        border-radius: 50%;
+        z-index: -1;
+        opacity: 0.35;
+    }
+    .inner{
+        padding: 60px 30px 30px 30px;
+        img{
+            &.logo{
+                margin-bottom: 26px;
+                transition: .3s;
+            }
+        }
+        .title{
+            margin-bottom: 8px;
+        }
+        p{
+            &.disc{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+// vedio section h2
+
+.container-custom-2{
+    max-width: 1680px;
+    margin: auto;
+    &.bg-vedio-image{
+        background-image: url(../images/vedio/01.jpg);
+        height: 671px;
+        @media #{$large-mobile} {
+            background-image: url(../images/vedio/01.jpg);
+            /* height: max-content; */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: auto;
+            height: 471px;
+        }
+    }
+}

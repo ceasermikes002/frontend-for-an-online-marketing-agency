@@ -1,0 +1,117 @@
+// about style one
+
+
+.about-right-one-area{
+    margin-left: -20px;
+    @media screen and (max-width: 1399px) {
+        margin-left: 20px;
+    }
+    @media #{$md-layout} {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    @media #{$sm-layout} {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    p{
+        &.disc{
+            margin-bottom: 20px;
+        }
+    }
+    a{
+        &.rts-btn{
+            margin-top: 15px;
+        }
+    }
+}
+
+
+.image-inner-area-wrapper-three{
+    position: relative;
+    .inetial{
+        margin-left: 53px;
+        @media #{$small-mobile} {
+            margin-left: 0;
+        }
+    }
+    .not-fix{
+        position: relative;
+        border-radius: 20px;
+        &.one{
+            left: 0;
+            margin-top: -200px;
+            @media #{$large-mobile} {
+                width: 250px;
+                height: auto;
+            }
+            @media #{$small-mobile} {
+                width: 200px;
+                height: auto;
+            }
+            &.two{
+                right: 0;
+                bottom: 80px;
+                left: 0;
+                margin-left: 60px;
+                position: absolute;
+                right: auto;
+                animation: jump-1 5s linear infinite;
+                @media #{$large-mobile} {
+                    width: 150px;
+                    height: auto;
+                }
+                @media #{$small-mobile} {
+                    bottom: 40px;
+                    width: 120px;
+                }
+            }
+        }
+    }
+}
+
+
+
+.rts-vedio-area{
+    &.vedio-area-home-two{
+        position: relative;
+        .vedio-icone{
+            position: absolute;
+            top: 63%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            @media #{$large-mobile} {
+                top: 51%;
+            }
+            a{
+                &::after{
+                    background-image: url(../images/banner/shape/11.png);
+                    width: 180px;
+                    height: 180px;
+                    animation: rotateIt2 8s linear infinite;
+                    left: -63%;
+                    top: -171%;
+                    transform: none;
+                }
+                &::before{
+                    z-index: 5;
+                }
+                span{
+                    &.icon{
+                        display: block;
+                        position: relative;
+                        z-index: 3;
+                        width: 0;
+                        height: 0;
+                        border-left: 17px solid #111A2E;
+                        border-top: 11px solid transparent;
+                        border-bottom: 11px solid transparent;
+                        top: 54%;
+                        transform: translate(-50%, -50%) rotate(178deg);
+                        left: 86%;
+                    }
+                }
+            }
+        }
+    }
+}

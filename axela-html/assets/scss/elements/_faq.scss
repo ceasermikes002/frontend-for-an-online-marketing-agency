@@ -1,0 +1,30 @@
+
+
+// faq wrapper
+
+.thumbnail-faq-h2{
+    position: relative;
+    z-index: 1;
+    &::after{
+        content: "";
+        position: absolute;
+        left: -5%;
+        top: 10%;
+        height: 100%;
+        width: 100%;
+        background-image: url(../images/faq/shape/01.png);
+        background-repeat: no-repeat;
+        z-index: -1;
+        animation: jump-1 5s linear infinite;
+        background-size: contain;
+    }
+    &.thumbnail-faq-inner{
+        &::after{
+            display: none;
+        }
+    }
+}
+
+.rts-faq-area-one{
+    border-bottom: 1px solid #EBEBEB;
+}

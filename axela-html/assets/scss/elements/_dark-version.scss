@@ -1,0 +1,721 @@
+
+// dark version  style hear
+.modal-sidebar-scroll ul li:hover span {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-sidebar-scroll {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-65%);
+    transform: translateY(-65%);
+    text-align: center;
+    z-index: 10;
+    right: 0;
+    left: auto;
+    ul{
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        li{
+            margin: 10px 0;
+            position: relative;
+            font-size: 20px;
+            span{
+                position: absolute;
+                background-color: var(--color-primary);
+                color: #fff;
+                white-space: nowrap;
+                padding: 5px 20px;
+                font-size: 13px;
+                top: 0;
+                right: 100%;
+                margin-right: 12px;
+                opacity: 0;
+                visibility: hidden;
+                -webkit-transition: all 0.3s linear 0ms;
+                transition: all 0.3s linear 0ms;
+                &::after{
+                    content: "";
+                    border-style: solid;
+                    border-color: transparent transparent transparent var(--color-primary);
+                    border-width: 6px;
+                    position: absolute;
+                    top: 50%;
+                    right: -12px;
+                    -webkit-transform: translate(0, -50%);
+                    -khtml-transform: translate(0, -50%);
+                    transform: translate(0, -50%);
+                }
+            }
+            i{
+                cursor: pointer;
+                color: #000;
+                padding: 10px 10px;
+                display: block;
+                -webkit-box-shadow: 0 3px 15px rgb(0 0 0 / 10%);
+                box-shadow: 0 3px 15px rgb(0 0 0 / 10%);
+                border-radius: 5px 0 0 5px;
+                background: #fff;
+                transition: .3s;
+                &:hover{
+                    background: var(--color-primary);
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+// dark mode on hear
+html{
+    &.rts-dark{
+        // header one
+        .header-one .main-header .main-nav .mainmenu li a{
+            color: #fff !important;
+        }
+        .header--sticky.sticky{
+            background: #27272e;
+        }
+        ul.submenu.home-mega .multiple::after{
+            background: #505050;
+            right: 15px;
+        }
+        .mainmenu li .submenu{
+            background: #27272e;
+            box-shadow: 0 2px 10px 0 rgb(0 0 0 / 10%);
+        }
+        // banner one dark style
+        .banner-one-content-wrapper span.pre-title {
+            padding: 10px 29px;
+            background: #0000003b;
+            border: 1px solid #ffffff1f;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #acacac;
+            letter-spacing: 0.1em;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .banner-shape-red::before{
+            opacity: .05;
+        }
+        .banner-shape-red::after{
+            opacity: .05;
+        }
+        .btn-watch-video span.text{
+            color: #fff;
+        }
+        .banner-one-content-wrapper h1.title-banner{
+            color: #fff;
+        }
+        .title{
+            color: #fff;
+        }
+        .bg_image--1 {
+            background-image: none;
+            background: #212121;
+        }
+        .banner-shape-area-one{
+            opacity: .05;
+        }
+        .banner-shape-one::before{
+            opacity: .05;
+        }
+        .shape-line::after{
+            opacity: .05;
+        }
+        .shape-line::before{
+            opacity: .05;
+        }
+
+        // devio play btn
+        .btn-watch-video::before{
+            border: 1px solid #000;
+        }
+        .btn-watch-video::after{
+            background: #000;
+        }
+        .btn-watch-video span.icon{
+            border-left: 14px solid #fff;
+        }
+            
+        
+        // working-process area
+        .rts-working-process-area{
+            background: #27272e;
+        }
+        .single-working-process-one{
+            background-image: url(../images/working-process/02.png);
+        }
+
+        .single-testimonials-h2 .body {
+            border-bottom: 1px solid #3c3c3d;
+        }
+    
+        //paragraph color Hear
+
+        .single-working-process-one .inner p.disc,
+        p,
+        .banner-wrapper-two .banner-content-area p.disc,
+        .accordion-wrapper-area .accordion .accordion-item .accordion-body,
+        .single-testimonials-h2 .body p.disc,
+        .rts-product-one .product-contact-wrapper span {
+            color: #a5a4a4;
+        }
+        .title-area span{
+            color: #c2c2c2;
+        }
+
+
+        // about area
+        .rts-about-us-area{
+            .thumbnail{
+                img{
+                    border-radius: 20px;
+                }
+            }
+        }
+        .rts-about-us-area{
+            background: var(--bg-dark-one);
+        }
+
+        // service area
+        .bg-light{
+            background-color: var(--bg-dark-two) !important;
+        }
+        .service-bg_shape::before{
+            opacity: .05;
+        }
+        .appoinment-shape .shape{
+            opacity: .05;
+        }
+        .rts-single-service-one {
+            background: var(--bg-dark-one);
+            box-shadow: 0px 14px 46px #0202024f;
+        }
+        .appoinment-area-one{
+            background: var(--bg-dark-one);
+            box-shadow: 0px 14px 46px #0202024f;
+        }
+        .appoinment-area-one .appoinment-right .single-input label,
+        .rts-send-message-area-h4 .content .title span.bold{
+            color: #fff;
+        }
+        .appoinment-area-one .appoinment-right .single-input input {
+            border: 1px solid rgb(100, 100, 100);
+        }
+        .appoinment-area-one .appoinment-right .single-input textarea{
+            border: 1px solid rgb(100, 100, 100);
+        }
+        .appoinment-area-one .appoinment-left .communicate-area .details-area a{
+            color: var(--color-primary);
+        }
+        .appoinment-area-one .appoinment-left .communicate-area .details-area span{
+            color: #fff;
+        }
+
+        // team section area start
+        
+        .rts-team-section{
+            background: var(--bg-dark-one);
+            .single-team-one{
+                img{
+                    border-radius: 20px;
+                }
+            }
+        }
+        .single-testimonial-one .body {
+            border-bottom: 2px solid #191919;
+        }
+        .brand-one-wrapper a img{
+            filter: grayscale(1);
+        }
+        .cta-bg-h4 {
+            background-color: #151533;
+        }
+        .counter-bg,
+        .bg_testimonials-h2,
+        .rts-appoinment-bg{
+            position: relative;
+            z-index: 1;
+            &::after{
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                background: #000;
+                opacity: .8;
+                content: '';
+                z-index: -1;
+            }
+        }
+        .cta-bg-h2{
+            position: relative;
+            z-index: 1;
+            &::before{
+                z-index: -1;
+                position: absolute;
+                content: '';
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                background: #000;
+                display: block;
+                opacity: .5;
+            }
+        }
+        .rts-single-service-wrapper-two .icon-wrapper .icon::after {
+            background: rgb(33 33 33);
+        }
+        .thumbnail-faq-h2::after{
+            opacity: .05;
+        }
+        .rts-faq-area-one {
+            border-bottom: 1px solid #262626;
+        }
+        .rts-single-service-wrapper-two .icon-wrapper {
+            border: 1px solid #3e3d62;
+        }
+        .rts-blog-post-area-one a .title{
+            border-bottom: 1px solid #191919;
+        }
+        .container-custom-2.bg-vedio-image{
+            border-radius: 20px;
+        }
+        .rts-send-message-area-h4{
+            .thumbnail{
+                img{
+                    opacity: .05;
+                }
+            }
+        }
+        .marquee_text {
+            color: #ffffff;
+        }
+        .single-testimonial-one .header-area .name-desig a h6,
+        a.rts-read-more,
+        .banner-wrapper-two .banner-content-area .banner-title,
+        .banner-wrapper-two .banner-content-area .banner-title span,
+        .counter-up-wrapper-two .counter-single p.disc,
+        .single-progress-area-h4 .progress-top p,
+        .single-progress-area-h4 .progress-top span.parcent{
+            color: #fff;
+        }
+        .counter-up-wrapper-two .counter-single {
+            border: 1px solid #b1b1b130;
+        }
+        .single-pricing-area-h2 .pricing-body p.disc{
+            border-bottom: 1px solid #414141;
+        }
+        .blog-single-two-wrapper .inner .admin-area {
+            border-bottom: 1px solid #282828;
+        }
+        .blog-single-two-wrapper .inner .body .date span {
+            color: #b2b2b2;
+        }
+        .blog-single-two-wrapper .inner .admin-area .details span {
+            color: #b2b2b2
+        }
+        .rts-footer-left-two .social-area.two li a i{
+            color: #000;
+        }
+        .rts-footer-left-two .social-area.two li a:hover i,
+        .rts-footer-right-two .single-wized .contact-info .rts-contact-info-single .number a,
+        .rts-callto-acation-area4 .container .cta-two-wrapper .cta-contact-box .left-side .email,
+        .rts-callto-acation-area4 .container .cta-two-wrapper .cta-contact-box .right-side .phone,
+        .header-top-start.header-three.header-four .left a,
+        .header-top-start.header-three.header-four .right .map-area p.map,
+        .rts-product-area .inner .title,
+        .rts-blog-area-h5-single .inner-area .social-area .time-area i,
+        .case-study-area .item .item-content .text-heding3{
+            color: #fff;
+        }
+        .rts-callto-acation-area4 .container .cta-two-wrapper .cta-contact-box .left-side {
+            border-right: 1px solid #444444;
+        }
+        .rts-footer-right-two .single-wized .nav{
+            li{
+                color: #fff;
+                a{
+                    color: #fff;
+                }
+            }
+        }
+        .service-detials-step-2 .single-service-step {
+            border: 1px solid #212121;
+        }
+        .service-detials-step-2 .single-service-step p.step::after{
+            background: #000;
+        }
+        .rts-blog-area-h5-single .inner-area .title {
+            border-bottom: 1px solid #2c2c2c;
+        }
+        .header-one.three .rts-btn.btn-secondary.call-btn{
+            border: none;
+        }
+        .case-study-area .item .item-image img{
+            border-radius: 15px;
+        }
+        .social-wrapper-two ul li a i {
+            color: #fff;
+            background: #27272e;
+            box-shadow: 0px 10px 12px rgb(0 0 0 / 21%), inset 1px 4px 5px rgb(14 1 171 / 30%);
+        }
+        .service-detials-step-1 .service-details-card {
+            box-shadow: 0px 8px 30px #0000004a;
+        }
+        .rts-banner-area.three::after {
+            background: linear-gradient(180deg, rgb(0 0 28 / 71%) 0%, rgb(0 0 12 / 95%) 100%);
+        }
+        .rts-banner-three .wrapper-three .shape{
+            opacity: .3;
+        }
+        .tab-button-area-one .nav li button.active {
+            border: 1px solid transparent;
+        }
+        .rts-footer-left-two p.disc,
+        .rts-copyright-two .copy-right p.disc,
+        .rts-copyright-two .nav li a,
+        .blog-lg-inner.single-blog-sm .inner a.rts-read-more,
+        .single-team-two .inner a h5,
+        .progress-wrap::after,
+        .title-area.team-h5 .title,
+        .title-area.ho-5 .title,
+        .rts-blog-area-h5-single .inner-area .title,
+        .rts-single-wized .recent-post-single .post-title .title{
+            color: #fff;
+        }
+
+        .team-inner-two .acquaintance-area .header {
+            padding: 30px 82px 22px 82px;
+            border-bottom: 1px solid #353535;
+        }
+        .rts-appoinment-form .inner input {
+            border: 1px solid #373737;
+        }
+        .rts-copyright-two {
+            border-top: 1px solid #424242;
+        }
+        .rts-footer-left-two .social-area.two li a:hover::after{
+            border: 1px solid var(--color-primary);
+        }
+        .rts-product-one{
+            border: 1px solid rgb(61, 61, 61);
+        }
+        .image-inner-area-wrapper-three .inetial{
+            border-radius: 20px;
+        }
+        .case-study-area .item .read-more {
+            border-top: 1px solid #3e3e3e;
+        }
+        .thumbnail-faq-h2{
+            img{
+                border-radius: 20px;
+            }
+        }
+        .rts-project-details-area{
+            .thumbnail{
+                img{
+                    border-radius: 15px;
+                }
+            }
+        }
+        .team-details-support-wrapper i {
+            border: 1px solid #3b3b3b;
+            color: #fff;
+        }
+        .accordion-wrapper-area.wrapper-area-inner .accordion .accordion-item {
+            box-shadow: 0px 12px 52px rgb(5 4 72 / 10%);
+        }
+        .big-bg-porduct-details .project-info .info-body .single-info {
+            border-bottom: 1px solid #2c2c2c;
+        }
+        .big-bg-porduct-details .project-info .info-body {
+            border-radius: 0 0 15px 0;
+        }
+        .single-about-skill-inner .title::after {
+            height: 1px;
+            background: #303030;
+        }
+        .rts-progress-one-wrapper .single-progress {
+            border-bottom: 1px solid #343434;
+        }
+        
+        .rts-progress-one-wrapper .meter {
+            box-shadow: inset 0 -1px 1px rgb(255 255 255 / 0%);
+            background: #00000026;
+        }
+        .education-skill-wrapper .single-skill{
+            border: 1px solid transparent;
+        }
+        
+        .accordion-wrapper-area .accordion .accordion-item .accordion-header button,
+        .single-testimonials-h2 .body .title,
+        .single-pricing-area-h2 .pricing-body .feature-area .single-feature span,
+        .single-pricing-area-h2 .pricing-body .feature-area .single-feature i,
+        .blog-single-two-wrapper .inner .admin-area .details p,
+        .rts-footer-right-two .single-wized .title-footer,
+        .rts-single-wized .single-categories li a,
+        .rts-breadcrumb-area .bread-tag a,
+        .portfolio-area.style-3 .portfolio-wrapper2 .portfolio-text .text .p-title,
+        .portfolio-area.style-3 .portfolio-wrapper2 .portfolio-text .text .p-category a,
+        .single-project-details-challenge .details,
+        .big-bg-porduct-details .project-info .info-body .single-info .info-details .name,
+        .education-skill-wrapper .single-skill .experience,
+        .blog-single-post-listing.details .details-tag h6,
+        .blog-single-post-listing.details .details-share h6,
+        .blog-single-post-listing.details .author-area .author-details h5{
+            color: #fff;
+        }
+        .rts-single-wized.service .single-categories li a{
+            &:hover{
+                background: var(--color-primary);
+            }
+        }
+        .portfolio-area.style-3 .portfolio-wrapper2 .img-fluid img{
+            border-radius: 15px;
+        }
+        .team-single-one-start,
+        .rts-team-area.style-3 .team-inner-two,
+        .rts-team-area.style-4 .team-inner-two .acquaintance-area,
+        .rts-single-wized .single-categories li a{
+            background: var(--bg-dark-two) !important;
+        }
+        .rts-single-wized .single-categories li a{
+            &:hover{
+                background: var(--color-primary);
+            }
+        }
+        .single-contact-one-inner .content .info a h5{
+            color: #fff;
+        }
+        .single-contact-one-inner{
+            border: 1px solid rgb(61, 61, 61);
+        }
+
+        .rts-blog-list-area .pagination button{
+            color: #fff;
+            border: 1px solid #3f3f3f;
+        }
+        .rts-blog-grid-area .pagination button{
+            color: #fff;
+            border: 1px solid #393939;
+        }
+        .blog-single-post-listing {
+            border: 1px solid #2c2c2c;
+        }
+        .blog-grid-inner {
+            border: 1px solid #424242;
+        }
+        .blog-single-post-listing.details .author-area {
+            border-top: 1px solid #303030;
+            border-bottom: 1px solid #303030;
+        }
+        
+        .bg_dark,
+        .rts-testimonial-area-one,
+        .shape-blog-one,
+        .rts-brand-area,
+        .single-testimonial-one,
+        .banner-area.banner-two-parent,
+        .rts-counterup-h2,
+        .index-two,
+        .accordion-wrapper-area .accordion .accordion-item,
+        .accordion-wrapper-area .accordion .accordion-item .accordion-header button,
+        .blog-single-two-wrapper,
+        .header-top-start.header-three,
+        .rts-appoinment-form .inner,
+        .single-team-two,
+        .rts-blog-area-h5-single .inner-area,
+        .rts-contact-form-area,
+        .rts-contact-fluid .form-wrapper input,
+        .rts-contact-fluid .form-wrapper textarea,
+        .rts-team-area-one,
+        .pricing-area-h2,
+        .rts-service-details-area,
+        .rts-single-wized.service .single-categories li a,
+        .rts-circle-progress-area,
+        .appoinment-team,
+        .rts-faq-area-one,
+        .rts-404-area,
+        .rts-project-area,
+        .case-study-area.case-bg2,
+        .big-bg-porduct-details .project-info .info-body,
+        .rts-team-details,
+        .rts-team-skill-area,
+        .rts-blog-list-area,
+        .rts-blog-grid-area,
+        .rts-team-area,
+        .rts-contact-area-page,
+        .side-bar{
+            background: var(--bg-dark-two);
+        }
+        
+        .bg-light-testimonial,
+        .single-product-one .inner-content,
+        .rts-blog-post-area-one,
+        .banner-wrapper-two .banner-morp::before,
+        .rts-footer-two-wrapper,
+        .rts-blog-area-h2,
+        .bg-business-solution-service,
+        .accordion-wrapper-area .accordion .accordion-item .accordion-header button[aria-expanded=true],
+        .single-testimonials-h2,
+        .single-pricing-area-h2,
+        .header-one.three,
+        .service-bg-color,
+        .bgproject-area,
+        .bgproject-area .rts-product-one,
+        .bg-team,
+        .blog-lg-inner,
+        .rts-callto-acation-area4 .container .cta-two-wrapper .cta-contact-box,
+        .progress-wrap svg,
+        .blog-bg-h5,
+        .rts-contact-fluid,
+        .rts-breadcrumb-area .bread-tag,
+        .team-single-one-start,
+        .service-detials-step-2 .single-service-step,
+        .rts-single-wized.contact,
+        .rts-single-wized.download,
+        .rts-single-wized.service,
+        .background-contact-appoinment,
+        .team-inner-two .acquaintance-area,
+        .case-study-area .item,
+        .case-study-area .item .read-more,
+        .portfolio-area.style-3,
+        .portfolio-area.style-4,
+        .portfolio-area.style-5,
+        .rts-project-details-area,
+        .education-skill-wrapper .single-skill,
+        .rts-single-wized,
+        .blog-single-post-listing .replay-area-details form input,
+        .blog-single-post-listing .replay-area-details form textarea,
+        .single-contact-one-inner{
+            background: var(--bg-dark-one);   
+        }
+        .rts-single-wized .single-categories li a{
+            &:hover{
+                background: var(--color-primary);
+            }
+        }
+
+        .single-product-wrapper-h2 .inner a .title{
+            color: var(--bg-dark-one);
+        }
+        .portfolio-area.style-5 .item .portfolio-wrapper .img-fluid img{
+            border-radius: 15px;
+        }
+        .rts-breadcrumb-area .bread-tag a.active{
+            color: var(--color-primary);
+        }
+
+        .portfolio-area.style-4 .item .img-fluid img{
+            border-radius: 15px 15px 0 0;
+        }
+
+
+
+        // home two banner
+        .banner-wrapper-two .banner-content-area .sub-title p span{
+            background: #fff;
+            color: #000;
+        }
+
+        // bradcrumb area
+        .breadcrumb-bg {
+            background-image: url(../images/breadcrumb/02.jpg);
+        }
+
+
+        // logo area start
+        header{
+            .active-dark{
+                display: block;
+            }
+            .active-light{
+                display: none;
+            }
+        }
+        .side-bar{
+            .logo-1{
+                display: none;
+            }
+            .logo-2{
+                display: block;
+            }
+        }
+
+        header{
+            a{
+                .stickys{
+                    display: none;
+                }
+            }
+            &.sticky{
+                a{
+                    .normal{
+                        display: block;
+                    }
+                    .stickys{
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .rts-footer-two-wrapper{
+            .rts-footer-left-two{
+                .light-logo-footer{
+                    display: none;
+                }
+                .dark-logo-fooetr{
+                    display: block;
+                }
+            }
+        }
+
+        // preloader
+        .loader-wrapper {
+            --curtain-color: var(--bg-dark-one);
+            --outer-line-color: #7883e6;
+            --middle-line-color: #46459d;
+            --inner-line-color: var(--color-primary);
+        }
+
+
+        .header-one .main-header .main-nav .mainmenu li{
+            &.current{
+                a{
+                    color: var(--color-primary) !important;
+                }
+            }
+        }
+        .banner-horizental-2 .banner-inner .item .pos{
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.7);
+            color: #f3f3fb;
+        }
+        .banner-horizental-2 .banner-inner .item .image-title{
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.7);
+            color: #f3f3fb;
+        }
+        .banner-horizental-2 .banner-inner .item:hover .image-title{
+            -webkit-text-stroke: 1px var(--color-primary) !important;
+        }
+        .banner-horizental-2 .banner-inner .item .image-title::before{
+            -webkit-text-stroke: 1px var(--color-primary) !important;
+            color: var(--color-primary);
+        }
+        
+
+    }
+
+}
+
+.index-six{
+    .modal-sidebar-scroll{
+        display: none;
+    }
+}

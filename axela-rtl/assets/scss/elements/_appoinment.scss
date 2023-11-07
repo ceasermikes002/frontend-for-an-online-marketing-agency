@@ -1,0 +1,93 @@
+
+// appoinment style hear
+
+.rts-appoinment-bg{
+    background-image: url(../images/appoinment/bg-01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.rts-appoinment-form{
+    position: relative;
+    .inner{
+        padding: 60px;
+        box-shadow: 0px 11px 35px rgba(22, 21, 40, 0.05);
+        border-radius: 15px;
+        background: #fff;
+        position: absolute;
+        @media #{$md-layout} {
+            position: relative;
+        }
+        @media #{$sm-layout} {
+            position: relative;
+            padding: 20px;
+        }
+        input{
+            border: 1px solid #E7E7F3;
+            border-radius: 15px;
+            height: 55px;
+            margin-bottom: 20px;
+            padding-left: 25px;
+            &:focus{
+                border: 1px solid var(--color-primary);
+            }
+        }
+        button{
+            margin-top: 10px;
+        }
+    }
+}
+
+
+.appoinment-right{
+    margin-top: 0;
+    .title-area{
+        span{
+            color: #fff;
+        }
+        .title{
+            color: #fff;
+        }
+    }
+    .counter-wrapper-appoinment{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 48px;
+        @media #{$small-mobile} {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+        .counter-single{
+            @media #{$small-mobile} {
+                margin-bottom: 20px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+            .title{
+                color: #fff;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 48px;
+                margin-bottom: 0;
+                .plus{
+                    position: relative;
+                    &::after{
+                        position: absolute;
+                        content: '+';
+                        font-size: 40px;
+                        left: -26px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        color: #fff;
+                    }
+                }
+            }
+            p{
+                color: #fff;
+            }
+        }
+    }
+}

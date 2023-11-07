@@ -1,0 +1,35 @@
+// brand style start
+
+.brand-one-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a{
+        img{
+            transition: .3s;
+            max-height: 100px;
+        }
+        &:hover{
+            img{
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+.mt-dec-brand{
+    margin-top: -10px;
+}
+.swiper.brand-1.swiper-initialized.swiper-horizontal.swiper-pointer-events {
+    padding: 9px 0;
+}
+.bg_brand--two{
+    background-image: url(../images/blog/bg-01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.brand-wrapper-two{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

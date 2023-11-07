@@ -1,0 +1,70 @@
+
+// cta style hear
+
+.cta-bg-one{
+    background-image: url(../images/cta/01.png);
+    background-repeat: no-repeat;
+    background-color: #231FE4;
+    background-blend-mode: multiply;
+    overflow: hidden;
+    background-position: center;
+    object-fit: contain;
+    background-size: cover;
+}
+
+.cta-wrapper-one{
+    span{
+        &.sub-title{
+            color: #fff;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+    .title{
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        color: #fff;
+        margin-bottom: 40px;
+        margin-top: 10px;
+    }
+}
+
+
+.cta-bg-h2{
+    background-image: url(../images/cta/02.jpg);
+    overflow: hidden;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    &::after{
+        position: absolute;
+        z-index: -1;
+        background-image: url(../images/cta/shape/02.png);
+        content: '';
+        left: 70%;
+        top: 30%;
+        height: 184%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        background-repeat: no-repeat;
+    }
+}
+
+.cta-wrapper{
+    &.home-two{
+        .title{
+            color: #fff;
+        }
+        p{
+            &.disc{
+                color: #fff;
+            }
+        }
+    }
+}

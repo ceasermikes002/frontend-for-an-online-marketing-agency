@@ -1,0 +1,32 @@
+
+
+.tp-img-reveal-wrapper {
+    width: auto;
+    height: auto;
+}
+
+.rts-hover-wrapper {
+    border-radius: 10px;
+    display: inline-block;
+    // backdrop-filter: blur(7px);
+    .rts-hover-title{
+        color: #fff !important;
+        margin-bottom: 6px;
+        font-size: 24px;
+        line-height: 24px;
+        padding: 7px 20px;
+        background-color: rgba(0, 0, 0, 0.788);
+        margin-bottom: 3px;
+    }
+    .rts-hover-subtitle{
+        color: #fff !important;
+        margin-bottom: 10px;
+        padding: 7px 20px;
+        background-color: rgba(0, 0, 0, 0.726);
+        font-size: 14px;
+        max-width: max-content;
+    }
+    p{
+        display: none;
+    }
+}
